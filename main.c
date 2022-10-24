@@ -1,21 +1,18 @@
-#include "includeAll.h"
+#include "defines.h"
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
 
-#define MAX_LENGTH = 32;
-#define inputString = "tgtgtgtgcaccg";
+#define MAX_LENGTH 32;
+#define inputString "tgtgtgtgcaccg";
 
-void printArray(int[] array);
+void printArray(int array[]);
 char generateRandomString(int length);
 int InsertionSort(String T, int n);
 int QuickSort(String T, int n);
 
 int main()
 {
-    const int MAX_LENGTH;
-    const char inputString;
-
     int insertionSuffixArray[];
     int quickSuffixArray[];
 
@@ -44,7 +41,7 @@ int main()
 
 // Methods
 
-void printArray(int[] array) {
+void printArray(int array[]) {
     for (int i, i <= array, i++) {
         printf(i + " ");
     }
